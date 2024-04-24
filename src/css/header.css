@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'Poppins-light';
+    src: url(../Poppins/Poppins-Light.ttf) format("opentype");
+  }
+
+.wrapper{
+    margin: 0 auto;
+    padding: 1em 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #161c2c85;
+    position: relative;
+    border-bottom: 1px rgba(255, 255, 255, 0.916);
+    font-family:'Poppins-light';
+}
+.logo{
+    width: 100px;
+    cursor: pointer;
+}
+.logo > img{
+    width: 150px;
+}
+.menu-list{
+    font-size: 20px;
+    color: white;
+    display: flex;
+    gap:50px;
+}
+.menu-list > li{
+    list-style: none;
+}
+.menu-list > li:hover{
+    color: #20509F;
+    transition: 1s;
+    cursor: pointer;
+}

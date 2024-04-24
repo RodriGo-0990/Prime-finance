@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Poppins-light';
+    src: url(../Poppins/Poppins-Light.ttf) format("opentype");
+  }
+.wrapper-home{
+    margin:0 auto;
+    background-image: url(../assets/suit.webp);
+    background-size: cover;
+    background-position-y: 15%;
+    background-position-x: 100px;
+    font-family: 'Poppins-light';
+    height: fit-content;
+}
