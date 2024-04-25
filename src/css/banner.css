@@ -4,6 +4,7 @@
 }
 .wrapper-banner{
     padding: 2em;
+    padding-bottom: 10em;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -70,7 +71,7 @@
     display: flex;
     align-items: center;
     font-size:medium;
-    color: rgb(178, 181, 183);
+    color: #7b7878;
 }
 .ask-div > p:hover{
     color: #20509F;

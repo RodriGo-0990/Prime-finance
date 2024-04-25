@@ -1,12 +1,12 @@
 import '../css/banner.css'
 import React, { useEffect } from 'react';
 import ScrollReveal from 'scrollreveal';
-import ArrowDown from '../assets/arrow-down.png'
-import Manager from '../assets/arrow-up.png'
+import { FiArrowDownRight } from "react-icons/fi";
+import Button from './sub-components/button-contact.jsx';
 
 function banner() {
     useEffect(() => {
-        // Inicialize a ScrollReveal
+        
         ScrollReveal().reveal('.title', {
             duration: 1500,
             origin: 'left',
@@ -44,11 +44,9 @@ function banner() {
                     </div>
                 </div>
                 <div className="second-block">
-                    <div className="button-contact">
-                        <button className="contact"> Fale com um especialista <span><img src={Manager} alt='icon' /></span></button>
-                    </div>
+                    <Button/>
                     <div className='ask-div'>
-                        <p><span><img src={ArrowDown} alt='arrow' /></span>Por que escolher a Versa Finance? </p>
+                        <p><span><FiArrowDownRight/></span> Por que escolher a Versa Finance? </p>
                     </div>
                 </div>
 

@@ -1,0 +1,35 @@
+@font-face {
+    font-family:'poppins-semibold' ;
+    src: url(../Poppins/Poppins-SemiBold.ttf) format('opentype');
+}
+
+.card-number{
+    margin: 0;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    gap:13px;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #20509F;
+    color: white;
+    border-radius: 40px;
+    box-shadow: 13px 10px 20px 2px #000000a4;
+}
+.numbers > p{
+    font-family: 'poppins-semibold';
+    font-size: 40px;
+}
+.text-card{
+    font-size:smaller;
+}
+@media (max-width:1014px) {
+    .card-number{
+        width: 300px;
+    }
+}
+@media (max-width:800px) {
+    .card-number{
+        width: 100%;
+    }
+}
