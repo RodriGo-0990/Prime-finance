@@ -41,10 +41,10 @@ function section() {
                     </div>
                 </div>
                 <div className='wrapper-card'>
-                    <CardNumbers number={4} text={'Bilhões em Cessões de Crédito'}/>
-                    <CardNumbers number={11} text={'Anos no mercado'}/>
-                    <CardNumbers number={4000} text={'Operações sem Default'}/>
-                    <CardNumbers number={75} text={'Instituíções Financeiras Parceiras'}/>
+                    <CardNumbers number={4} text={'Bilhões em Cessões de Crédito'} ms={1000}/>
+                    <CardNumbers number={11} text={'Anos no mercado'} ms={400} />
+                    <CardNumbers number={3000} text={'Operações sem Default'} ms={0.11} />
+                    <CardNumbers number={75} text={'Instituíções Financeiras Parceiras'} ms={50}/>
                 </div>
             </div>
         </>

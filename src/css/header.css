@@ -5,7 +5,7 @@
 
 .wrapper{
     margin: 0 auto;
-    padding: 1em 2em;
+    padding: 1em 3em;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -16,7 +16,6 @@
     font-family:'Poppins-light';
 }
 .logo{
-    width: 100px;
     cursor: pointer;
 }
 .logo > img{
@@ -35,4 +34,32 @@
     color: #20509F;
     transition: 1s;
     cursor: pointer;
+}
+.sidebar-icon{
+    display: none;
+    margin: 0;
+    cursor: pointer;
+}
+@media(max-width: 1000px){
+    .wrapper{
+        padding: 1em 2em;
+    }
+    .menu-list{
+        display: none;
+    }
+    .sidebar-icon{
+        display: block;
+    }
+    .logo{
+        margin: 0;
+    } 
+}
+@media(max-width:500px){
+    .wrapper{
+        padding:1em;
+    }
+
+    .logo > img{
+        width: 100px;
+    }
 }

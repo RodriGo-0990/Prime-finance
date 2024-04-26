@@ -7,14 +7,17 @@
     padding-bottom: 10em;
     display: flex;
     justify-content: space-between;
+    gap: 23px;
     flex-wrap: wrap;
     color: aliceblue;
     background-image: linear-gradient(180deg, #00000052 0, #030303f3 100%);
     position: relative;
+    height: 100vh;
 }
 .first-block{
     text-align: start;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     width: 400px;
     gap: 23px;
@@ -50,34 +53,65 @@
     font-size:large;
     font-weight: bold;
     color: #ffffffaf;
-    padding: 3em 2em 1em 1em;
+    padding: 2em 2em;
     background-color:#1c6ab827;
     box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.658);
-    transition:1s ease-in-out;
+    transition:.3s ease-in-out;
 }
 .contact:hover{
     background-color:#20519f69;
     color: #fffefe;
-    transform: scale(1.05);
     cursor: pointer;
-}
-.contact span > img{
-    position: absolute;
-    right: 8px;
-    top: 1px;
-    width: 42px;
 }
 .ask-div > p{
     display: flex;
     align-items: center;
     font-size:medium;
-    color: #7b7878;
+    color: #dcdcdc;
 }
 .ask-div > p:hover{
     color: #20509F;
     transition:.5s ease;
     cursor: pointer;
 }
-.ask-div > p img{
-    width: 38px;
+
+@media(max-width: 1000px){
+    .wrapper-banner{
+        padding: 1em 2em;
+        padding-bottom: 10em ;
+    }
+    .first-block{
+        margin: 0;
+        width: 60%;
+    }
+    .second-block{
+        justify-content: start;
+    }
+    .title{
+        margin: 0;
+    }
+}
+@media(max-width: 532px){
+    .wrapper-banner{
+        padding:  1em;
+        gap: 13px;
+    }
+    .first-block{
+        width: 70%;
+    }
+    .title{
+        font-size:small;
+    }
+    .ask-div > p{
+        font-size: smaller;
+        text-align: center;
+    }
+    .contact{
+        font-size: small;
+    }
+}
+@media(max-width: 368px){
+    .wrapper-banner{
+        height: fit-content;
+    }
 }

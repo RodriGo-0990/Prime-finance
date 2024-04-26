@@ -1,5 +1,6 @@
 import "../css/header.css";
 import logo from '../assets/PNG/logo-05.png'
+import { SlMenu } from "react-icons/sl";
 export default function header() {
     return (
         <>
@@ -16,6 +17,11 @@ export default function header() {
                         <li className="menu-item"> Contato</li>
                     </ul>
                 </div>
+
+                <div className="sidebar-icon">
+                    <SlMenu color="white" size={30}/>
+                </div>
+
             </div>
         </>
     )

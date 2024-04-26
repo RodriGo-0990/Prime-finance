@@ -14,7 +14,8 @@
     background-color: #20509F;
     color: white;
     border-radius: 40px;
-    box-shadow: 13px 10px 20px 2px #000000a4;
+    box-shadow: 10px 10px 18px #000000;
+    cursor: pointer;
 }
 .numbers > p{
     font-family: 'poppins-semibold';
@@ -30,6 +31,6 @@
 }
 @media (max-width:800px) {
     .card-number{
-        width: 100%;
+        width: 90%;
     }
 }
