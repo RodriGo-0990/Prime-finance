@@ -26,10 +26,15 @@
 }
 @media (max-width:1014px) {
     .card-number{
-        width: 300px;
+        width: 200px;
     }
 }
-@media (max-width:800px) {
+@media (max-width:870px) {
+    .card-number{
+        width: 40%;
+    }
+}
+@media (max-width:500px) {
     .card-number{
         width: 90%;
     }

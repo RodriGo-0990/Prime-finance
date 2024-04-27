@@ -79,6 +79,7 @@
     .wrapper-banner{
         padding: 1em 2em;
         padding-bottom: 10em ;
+        height: auto;
     }
     .first-block{
         margin: 0;
