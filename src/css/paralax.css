@@ -64,6 +64,9 @@
     .paralax{
         font-size: 8px;
     }
+    .wrapper-paralax{
+        height: 800px;
+    }
 }
 @media(max-width:400px){
     .paralax{

@@ -3,8 +3,7 @@
     src: url(../Poppins/Poppins-SemiBold.ttf) format('opentype');
 }
 .wrapper-banner{
-    padding: 2em;
-    padding-bottom: 10em;
+    padding: 5em 2em;
     display: flex;
     justify-content: space-between;
     gap: 23px;
@@ -95,7 +94,6 @@
     .wrapper-banner{
         padding:  1em;
         gap: 33px;
-        height: fit-content;
     }
     .first-block{
         width: 100%;
@@ -109,6 +107,11 @@
     }
     .contact{
         font-size: small;
+    }
+}
+@media(max-width:300px){
+    .wrapper-banner{
+        height: fit-content;
     }
 }
 @media(orientation:landscape){
