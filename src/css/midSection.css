@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'poppins-light';
+    src: url(../Poppins/Poppins-Light.ttf) format('opentype');
+}
+
+.wrapper-midsection-background {
+    background-color: black;
+    padding-top: 5em;
+}
+
+.wrapper-midsection {
+    font-family: 'poppins-light';
+    padding: 7em;
+    display: flex;
+    justify-content: space-between;
+    gap: 13px;
+    background-image: url(../assets/manager.png);
+    background-size: 480px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    flex-wrap: wrap;
+    color: white;
+}
+
+@media(max-width: 1180px) {
+    .wrapper-midsection {
+        padding: 2em;
+    }
+}
+
+@media(max-width: 1002px) {
+    .wrapper-midsection {
+        background-position: right;
+    }
+    .wrapper-midsection{
+        font-size: smaller;
+    }
+}
+@media(max-width: 800px){
+    .wrapper-midsection{
+        background-size: 350px;
+        background-position: bottom right;
+    }
+}
+@media(max-width: 535px){
+    .wrapper-midsection{
+        background-size: 250px;
+        background-position: bottom center;
+        gap: 150px;
+    }
+}

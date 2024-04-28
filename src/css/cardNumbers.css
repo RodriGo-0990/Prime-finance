@@ -38,4 +38,8 @@
     .card-number{
         width: 90%;
     }
+    .text-card{
+        font-size: large;
+        font-weight: bold;
+    }
 }

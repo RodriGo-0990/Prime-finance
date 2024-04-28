@@ -79,7 +79,6 @@
     .wrapper-banner{
         padding: 1em 2em;
         padding-bottom: 10em ;
-        height: auto;
     }
     .first-block{
         margin: 0;
@@ -95,10 +94,11 @@
 @media(max-width: 532px){
     .wrapper-banner{
         padding:  1em;
-        gap: 13px;
+        gap: 33px;
+        height: fit-content;
     }
     .first-block{
-        width: 70%;
+        width: 100%;
     }
     .title{
         font-size:small;
@@ -111,7 +111,7 @@
         font-size: small;
     }
 }
-@media(max-width: 368px){
+@media(orientation:landscape){
     .wrapper-banner{
         height: fit-content;
     }
