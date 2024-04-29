@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'poppins-semibold';
+    src: url(../Poppins/Poppins-SemiBold.ttf) format('opentype');
+}
+
+.wrapper-cards {
+    width: 80%;
+    text-align: center;
+    padding: 0;
+    font-family: 'poppins-semiBold';
+    color: grey;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.wrapper-cards h1 {
+    font-size: xx-large;
+}
+
+.div-cards {
+    background-color: rgba(207, 206, 206, 0.248);
+    margin: 0;
+    padding: 2em;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 13px;
+    justify-content: center;
+}
+@media(max-width:350px){
+    .div-cards{
+        padding: 0;
+    }
+}
+@media(max-width:650px) {
+    .wrapper-cards h1 {
+        font-size: x-large;
+    }
+    .div-cards {
+        width: 100%;
+    }
+    .wrapper-cards {
+        width: 100%;
+    }
+}
