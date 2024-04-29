@@ -4,7 +4,7 @@
 }
 
 .wrapper-cards {
-    width: 80%;
+    width: 70%;
     text-align: center;
     padding: 0;
     font-family: 'poppins-semiBold';
@@ -33,7 +33,7 @@
         padding: 0;
     }
 }
-@media(max-width:650px) {
+@media(max-width:1250px) {
     .wrapper-cards h1 {
         font-size: x-large;
     }

@@ -52,8 +52,14 @@
         font-size: 20px;
     }
 }
-@media(max-width:650px) {
+@media(max-width:695px) {
     .wrapper-card-options {
         width: 100%;
     }
+}
+@media (max-width:1255px) {
+    .wrapper-card-options{
+        margin: 0;
+    }
+    
 }
