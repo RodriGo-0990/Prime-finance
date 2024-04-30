@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'poppins-light';
+    src: url(../Poppins/Poppins-Light.ttf) format('opentype');
+}
+.wrapper-center{
+    padding: 1em;
+}
+.wrapper-midbanner{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 20px;
+    color: white;
+    background-color:#000a1ed5;
+    padding: 3em;
+    gap: 13px;
+
+}
+.midbanner-background{
+    background-image: url(../assets/reuniao-empresa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    border-radius: 20px;
+    background-position: center;
+}
+.text-midbanner{
+    margin-top: 5px;
+    text-align: start;
+    line-height: 1.5em;
+    font-family: 'poppins-light';
+}
+@media(max-width: 695px){
+    .midbanner-background{
+        background-position-x: 70%;
+    }
+}
+@media(min-width: 695px) and  (max-width:890px ){
+    .midbanner-background{
+        background-position: center;
+    }
+}

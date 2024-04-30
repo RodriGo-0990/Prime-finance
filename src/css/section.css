@@ -28,6 +28,7 @@
 }
 .title-section{
     font-family: 'poppins-semibold';
+    line-height: 2.3em;
 }
 .ask-div-section > p{
     display: flex;

@@ -48,6 +48,7 @@
     .wrapper-midsection{
         background-size: 250px;
         background-position: bottom center;
-        gap: 150px;
+        
+        padding-bottom: 22em;
     }
 }

@@ -26,6 +26,7 @@
 
 .title {
     padding: 0;
+    line-height: 2.3em;
     text-align: start;
     font-size: larger;
     font-family: 'poppins-semibold'
