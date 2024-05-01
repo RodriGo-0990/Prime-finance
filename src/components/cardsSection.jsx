@@ -48,7 +48,7 @@ function cardsSection() {
                     <Cards logo={<FaHatCowboy color='white' size={50} />}
                         foto={rural}
                         title={
-                            'Crédito e financiamento Rural'} />
+                            'Crédito Rural'} />
                     <Cards logo={<PiCertificate color='white' size={50}/>}
                         foto={deben}
                         title={

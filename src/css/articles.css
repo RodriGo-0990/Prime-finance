@@ -52,7 +52,7 @@
 }
 @media(max-width:350px){
     .wrapper-article{
-        width: 90%;
+        width: 100%;
     }
 }
 @media(min-width:450px) and (max-width:950px){

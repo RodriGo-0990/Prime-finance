@@ -33,17 +33,10 @@
     cursor: pointer;
 }
 
-@media(max-width:350px) {
-    .title-articles {
-        width: 90%;
+@media(max-width:600px) {
+    .title-articles{
         font-size: small;
-    }
-}
-
-@media(min-width:350px)and(max-width:600px) {
-    .title-articles {
         width: 90%;
-        font-size: medium;
         line-height: 2.3em;
     }
 }
@@ -51,5 +44,8 @@
 @media(max-width:1114px) {
     .wrapper-articles {
         width: 100%;
+    }
+    .title-articles{
+        width: 80%;
     }
 }

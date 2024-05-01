@@ -7,6 +7,7 @@ import Void from './components/void.jsx'
 import CardsSection from './components/cardsSection'
 import MidBanner from './components/midbanner'
 import ArticlesSection from './components/articleSsection'
+import Footer from './components/footer'
 function App() {
 
   return (
@@ -22,6 +23,7 @@ function App() {
       <Void/>
       <ArticlesSection/>
       <Void/>
+      <Footer/>
     </>
   )
 }

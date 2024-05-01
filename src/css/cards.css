@@ -7,7 +7,7 @@
     background-size: cover;
     color: white;
     box-shadow: 5px 8px 12px 1px #000000a2;
-    transition: .5s;
+    transition: 20s;
     border-radius: 15px;
     cursor: pointer;
     width: 300px;
@@ -22,6 +22,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     border-radius: 15px;
 }
 
@@ -30,7 +31,11 @@
     box-shadow: 12px 12px 12px 1px #000000a2;
     transform: scale(1.01);
 }
-
+.card-title{
+    display: flex;
+    flex-direction: column;
+}
+.card-title,
 .arrow-card,
 .logo-card {
     margin: 0;
