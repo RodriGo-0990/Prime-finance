@@ -1,10 +1,19 @@
 import "../css/header.css";
 import logo from '../assets/PNG/logo-05.png'
 import { SlMenu } from "react-icons/sl";
+import { useEffect, useState } from "react";
+
+import SideMenu from "./sub-components/sidemenu";
+
 export default function header() {
+    const[activate,setActive]= useState(false);
+    
+    const openMenu = () => {
+        setActive(prevState => !prevState);
+    };
     return (
         <>
-            <div className="wrapper">
+            <container className="wrapper">
                 <div className="logo">
                     <img src={logo} alt="logo" />
                 </div>
@@ -19,10 +28,11 @@ export default function header() {
                 </div>
 
                 <div className="sidebar-icon">
-                    <SlMenu color="white" size={30}/>
+                    <SlMenu onClick={openMenu} color="white" size={30}/>
                 </div>
-
-            </div>
+                {/* sidebar */}
+                    <SideMenu open={activate}/>
+            </container>
         </>
     )
 }

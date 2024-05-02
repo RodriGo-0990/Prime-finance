@@ -4,7 +4,7 @@
 }
 
 .wrapper-banner {
-    padding: 5em 2em;
+    padding: 2em 2em;
     display: flex;
     justify-content: space-between;
     gap: 23px;
@@ -25,6 +25,7 @@
 }
 
 .title {
+    margin: 0;
     padding: 0;
     line-height: 2.3em;
     text-align: start;
@@ -36,6 +37,20 @@
     padding: 0;
     text-align: start;
     line-height: 1.5em;
+}
+.solutions{
+    display: flex;
+    width: 100%;
+    gap: 12px;
+}
+.logo-solutions svg{
+    margin: 0;
+    align-self: center;
+    justify-self: center;
+}
+.solutions>p{
+    margin: 0;
+    font-size: small;
 }
 
 .second-block {
@@ -99,9 +114,6 @@
         justify-content: start;
     }
 
-    .title {
-        margin: 0;
-    }
 }
 
 @media(max-width: 532px) {
@@ -111,9 +123,9 @@
     }
 
     .first-block {
-        width: 100%;
+        width: 80%;
     }
-
+    
     .title {
         font-size: small;
     }
@@ -122,13 +134,13 @@
         font-size: smaller;
         text-align: center;
     }
-
+    
     .contact {
         font-size: small;
     }
 }
 
-@media(max-width:300px){
+@media(max-width:340px){
     .wrapper-banner {
         height: fit-content;
     }

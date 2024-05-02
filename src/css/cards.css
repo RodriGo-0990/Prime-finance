@@ -7,7 +7,7 @@
     background-size: cover;
     color: white;
     box-shadow: 5px 8px 12px 1px #000000a2;
-    transition: 20s;
+    transition: .5s ;
     border-radius: 15px;
     cursor: pointer;
     width: 300px;

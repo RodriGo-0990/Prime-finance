@@ -1,9 +1,11 @@
 @font-face {
     font-family: 'Poppins-light';
     src: url(../Poppins/Poppins-Light.ttf) format("opentype");
-  }
-
-.wrapper{
+}
+:root{
+    --width-side-bar: 30%;
+}
+.wrapper {
     margin: 0 auto;
     padding: 1em 3em;
     display: flex;
@@ -11,55 +13,127 @@
     justify-content: space-between;
     align-items: center;
     background-color: #161c2c85;
-    position: relative;
     border-bottom: 1px rgba(255, 255, 255, 0.916);
-    font-family:'Poppins-light';
+    font-family: 'Poppins-light';
+    position: relative;
 }
-.logo{
+
+.logo {
     cursor: pointer;
 }
-.logo > img{
+
+.logo>img {
     width: 150px;
 }
-.menu-list{
+
+.menu-list {
     font-size: 20px;
     color: white;
     display: flex;
-    gap:50px;
+    gap: 50px;
 }
-.menu-list > li{
+
+li {
     list-style: none;
 }
-.menu-list > li:hover{
+
+li:hover {
     color: #20509F;
     transition: 1s;
     cursor: pointer;
 }
-.sidebar-icon{
+
+.sidebar-icon {
     display: none;
     margin: 0;
     cursor: pointer;
 }
-@media(max-width: 1000px){
-    .wrapper{
-        padding: 1em 2em;
-    }
-    .menu-list{
+
+/* sidemenu */
+
+.side-menu {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    width: var(--width-side-bar);
+    height: 100vh;
+    transition: width .8s, right .8s ;
+    color: white;
+    background-color: #000000fb;
+    z-index: 9999;
+    padding: 1em;
+    box-shadow: -1px 0 1px white;
+}
+.side-menu-close {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right:-100px;
+    height: 100vh;
+    transition: width .8s, right .8s ;
+    width: 0px;
+    color: white;
+    background-color: #000000fb;
+    z-index: 9999;
+    padding: 1em;
+    box-shadow: -1px 0 1px white;
+}
+button{
+    background-color:#000000fb;
+    border: none;
+}
+
+.head-sidemenu {
+    padding: 1em 0;
+}
+
+.head-sidemenu svg {
+    cursor: pointer;
+}
+
+.sidemenu-list>li {
+    padding: .3em;
+    white-space: nowrap;
+}
+
+@media(min-width:1000px) {
+    .side-menu {
         display: none;
     }
-    .sidebar-icon{
-        display: block;
-    }
-    .logo{
-        margin: 0;
-    } 
 }
-@media(max-width:500px){
-    .wrapper{
-        padding:1em;
+
+@media(max-width: 1000px) {
+    .wrapper {
+        padding: 1em 2em;
     }
 
-    .logo > img{
+    .menu-list {
+        display: none;
+    }
+
+    .sidebar-icon {
+        display: block;
+    }
+
+    .logo {
+        margin: 0;
+    }
+}
+
+@media(max-width:500px) {
+    .wrapper {
+        padding: 1em;
+    }
+
+    .logo>img {
         width: 100px;
     }
+
+    .head-sidemenu {
+        padding: .3em 0;
+    }
+   :root{
+    --width-side-bar: 70%;
+   }
 }

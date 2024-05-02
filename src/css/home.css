@@ -12,3 +12,9 @@
     font-family: 'Poppins-light';  
     background-color: black;
 }
+@media(max-width:400px){
+  .wrapper-home{
+    background-position-x: 50px;
+    background-position-y: -50px ;
+  }
+}
