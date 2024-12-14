@@ -50,7 +50,7 @@
 .article-title h2:hover ,  .leia-mais:hover{
     color: #20509F;
 }
-@media(max-width:350px){
+@media(max-width:420px){
     .wrapper-article{
         width: 100%;
     }

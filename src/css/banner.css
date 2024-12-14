@@ -4,7 +4,7 @@
 }
 
 .wrapper-banner {
-    padding: 2em 2em;
+    padding: 5em 2em;
     display: flex;
     justify-content: space-between;
     gap: 23px;
@@ -12,7 +12,7 @@
     color: aliceblue;
     background-image: linear-gradient(180deg, #00000052 0, #030303f3 100%);
     position: relative;
-    height: 100vh;
+    height: fit-content;
 }
 
 .first-block {

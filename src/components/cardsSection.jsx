@@ -18,13 +18,9 @@ import bndes from "../assets/bndes.webp"
 import black from "../assets/0.jpg"
 
 
-function cardsSection() {
+function cardsSection({title}) {
     useEffect(() => {
-        ScrollReveal().reveal('.wrapper-cards',
-            {
-                duration: 1500,
-                distance: '20px'
-            });
+       
         ScrollReveal().reveal('.div-cards',
             {
                 duration: 1500,
@@ -35,7 +31,7 @@ function cardsSection() {
     return (
         <>
             <div className='wrapper-cards'>
-                <h1>Cada cliente é especial, e assim também são as <p style={{ color: '#20509F' }}>nossas soluções.</p></h1>
+                <h1>{title}</h1>
                 <div className='div-cards'>
                     <Cards logo={<BsBuilding color='white' size={50}></BsBuilding>}
                         foto={cred}

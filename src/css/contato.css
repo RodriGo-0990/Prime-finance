@@ -1,0 +1,201 @@
+@font-face {
+    font-family: 'poppins-semibold';
+    src: url(../Poppins/Poppins-SemiBold.ttf) format('opentype');
+}
+@font-face{
+    font-family: 'poppins-light';
+    src: url(../Poppins/Poppins-Light.ttf) format('opentype');
+
+}
+.contato{
+    font-family: 'poppins-semibold';
+    margin:0;
+    width: 100%;
+    background: black;
+    color: white;
+}
+.banner-contato{
+    width: 80%;
+    padding: 5em 1em 0 1em;
+}
+.title-contato{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 2em;
+    gap: 1em;
+
+}
+.title-contato h1{
+    font-size: 38px;
+}
+.title-contato p{
+    align-self: flex-end;
+    font-family: 'poppins-light';
+}
+@media(max-width:920px){
+    .banner-contato{
+        margin: 0;
+        width: 100%;
+        padding-top: 5em;
+
+        & h1{
+            font-size: 28px;
+            width: 100%;
+        }
+        & p{
+            width: 100%;
+        }
+    }
+    .title-contato{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+
+.form-contato{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 2.6em 0;
+    background-image: url('../assets/contact_.webp');
+    background-size: contain;
+    background-position: 20% ;
+    background-repeat: no-repeat;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 50%;
+    margin: 0;
+    color: white;
+}
+@media(max-width:668px){
+    .form-contato{
+        justify-content: center;
+        background-color: rgb(0, 0, 0);
+        background-blend-mode: overlay;
+    }
+    form{
+        width: 100%;
+    }
+}
+
+input{
+    border-radius: .3em;
+    padding: 1em;
+    width: 98%;
+    border-style: none;
+    font-family: 'poppins-light';
+    color: white;
+    background:#26241ed4;
+    cursor: pointer;
+    
+}
+form button{
+    background:blue;
+    width: 98%;
+    border-radius: .3em;
+    color: white;
+    padding: .5em;
+    border-style: none;
+    font-size: large;
+    font-family: 'poppins-semibold';
+    cursor: pointer;
+}
+form button:hover{
+    background: rgb(2, 2, 182);
+}
+textarea{
+    border-radius: .3em;
+    padding: 1em;
+    width: 98%;
+    background:rgba(38, 36, 30, 0.832);
+    border-style: none;
+    font-family: 'poppins-light';
+    resize: none;
+    color: white;
+    cursor: pointer;
+    
+}
+.title-contatos{
+    font-family: 'poppins-light';
+    text-align: center;
+    width: 100%;
+    margin-bottom: 2em;
+}
+.contatos-wrapper{
+    font-family: 'poppins-light';
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contatos-item{
+    margin: 0;
+    border-top: 1px solid #8080801c ;
+    border-bottom: 1px solid #8080801c ;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    gap: .3em;
+    width: 200px;
+    height: fit-content;
+    cursor: pointer;
+    & h3{
+        margin: 0;
+        font-family: 'poppins-semibold';
+        color: #173e7b;
+    }
+    & p{
+        margin: 0;
+        color: #535353;
+    }
+}
+@media(max-width:650px){
+    .contatos-item{
+        width: 80%;
+    }
+    .contatos-wrapper{
+        justify-content: center;
+    }
+}
+.contatos-item::after{
+    content: "";
+    width: 100%;
+    box-shadow: 0 1px 1px 1px #8080801c;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.contatos-icon{
+    padding: 1em;
+    padding-bottom: .5em;
+    border: 4px solid #173e7b;
+    border-radius: 100%;
+    background:#e8e8e8;
+}
+.title-faq{
+    width: 100%;
+    text-align: center;
+    font-family: 'poppins-semibold';
+    padding: 1em;
+    color: #173e7b;
+    font-size: larger;
+}
+.faq-wrapper{
+    margin: 0;
+    display: block;
+    padding: 1em;
+    width: 100%;
+    background-color:#dcdcdca4;
+}

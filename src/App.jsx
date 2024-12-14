@@ -17,11 +17,14 @@ function App() {
       <Paralax/>
       <MidSection/>
       <Void/>
-      <CardsSection/>
+      <CardsSection title={<>
+      Cada cliente é especial, e assim também são as 
+      <span style={{ color: "#20509F" }}> nossas soluções</span>
+    </>}/>
       <Void/>
       <MidBanner/>
       <Void/>
-      <ArticlesSection/>
+      <ArticlesSection title={'Conteúdos para impulsionar o seu negocio'}/>
       <Void/>
       <Footer/>
     </>

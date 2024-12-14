@@ -1,0 +1,17 @@
+.about{
+    background: linear-gradient(to bottom, black 80%, #ffffff 20%);
+    width:100%;
+}
+.cards-about{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 13px; 
+}
+@media(max-width: 992px) {
+    .cards-about{
+        padding: 10px;
+    }  
+}

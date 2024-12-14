@@ -33,13 +33,15 @@
     gap: 50px;
 }
 
-li {
-    list-style: none;
+li a{
+    text-decoration: none;
+    color: aliceblue;
+    position: relative;
 }
 
-li:hover {
+li a:hover {
     color: #20509F;
-    transition: 1s;
+    transition: .5s;
     cursor: pointer;
 }
 

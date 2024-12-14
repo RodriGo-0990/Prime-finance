@@ -20,7 +20,7 @@
 }
 
 .div-cards {
-    background-color: rgba(207, 206, 206, 0.248);
+    background-color: #cfcece3f;
     margin: 0;
     padding: 2em;
     width: 100%;
@@ -29,9 +29,9 @@
     gap: 13px;
     justify-content: center;
 }
-@media(max-width:380px){
+@media(max-width:420px){
     .div-cards{
-        padding: 0;
+        padding: 2px;
     }
 }
 @media(max-width:1250px) {

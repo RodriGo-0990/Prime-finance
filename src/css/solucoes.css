@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'poppins-semibold';
+    src: url(../Poppins/Poppins-SemiBold.ttf) format('opentype');
+}
+
+.solucoes {
+    background-color: black;
+}
+
+.banner-solucoes {
+    color: white;
+    padding: 10em 0 10em 0;
+    margin-bottom: 2em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    font-family: 'poppins-semibold';
+}
+
+.title-solucoes {
+    max-width: 1000px;
+    text-align: center;
+    font-size: x-large;
+}
+
+h1 {
+    line-height: 1.3em;
+}
+
+@media(max-width: 767px) {
+    .banner-solucoes{
+        padding: 5em .1em;
+    }
+    .title-solucoes {
+        font-size: large;
+    }
+}
