@@ -59,7 +59,7 @@ function banner() {
                 <div className="second-block">
                     <Button />
                     <div className='ask-div'>
-                        <p><span><FiArrowDownRight /></span> Por que escolher a Versa Finance? </p>
+                        <p><span><FiArrowDownRight /></span> Por que escolher a Prime Finance? </p>
                     </div>
                 </div>
 

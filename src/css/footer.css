@@ -20,7 +20,7 @@
     display: flex;
     flex-wrap: wrap;
 }
-.versa-div{
+.prime-div{
     margin:0;
     padding:1em;
     width: 300px;
@@ -29,10 +29,14 @@
     flex-direction: column;
     justify-content: space-evenly;
 }
-img{
+a img{
     margin: 0;  
     width: 200px;
     align-self: start;
+}
+a{
+    text-decoration: none;
+    color: white;
 }
 .logo-redes{
     margin:0;
@@ -84,11 +88,11 @@ li:hover{
     .logo-redes{
         justify-content:center;
     }
-    .versa-div{
+    .Prime-div{
         width: 100%;
         text-align:center;
     }
-    .versa-div img{
+    a img{
         align-self: center;
     }
 }

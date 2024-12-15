@@ -28,7 +28,8 @@ function Solucoes() {
           </div>
         </div>
       </div>
-      <SectionCards/>
+      <Void/>
+      <SectionCards title={<><h1>Impulsione seu negócio com crédito sob medida para suas <span style={{ "color": "#20509F" }}>necessidades.</span></h1></>}/>
       <Void />
       <MidSection />
       <Void />

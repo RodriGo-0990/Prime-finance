@@ -31,7 +31,7 @@ function Contato() {
         <div className='banner-contato'>
           <div className='title-contato'>
             <h1>Na hora de planejar o futuro da sua empresa conte com os nossos <span style={{ "color": "#20509F" }}>profissionais</span></h1>
-            <p>Descubra a diferença da Sarti Finance e experimente a verdadeira personalização em serviços financeiros. Vamos juntos desenhar o seu futuro financeiro. Entre em contato conosco hoje para iniciar sua jornada.</p>
+            <p>Descubra a diferença da Prime Finance e experimente a verdadeira personalização em serviços financeiros. Vamos juntos desenhar o seu futuro financeiro. Entre em contato conosco hoje para iniciar sua jornada.</p>
           </div>
           <div className='form-contato'>
             <form>
@@ -57,7 +57,7 @@ function Contato() {
         <div className='contatos-item'>
           <div className='contatos-icon'><IoMailSharp color='#20509F' size={30} /></div>
           <h3>Email</h3>
-          <p>contatos@versafinance.com.br</p>
+          <p>contatos@Primefinance.com.br</p>
         </div>
         <div className='contatos-item'>
           <div className='contatos-icon'><FaLocationDot color='#20509F' size={30} /></div>

@@ -13,15 +13,15 @@ export default function header() {
     <>
       <div className="wrapper">
         <div className="logo">
-          <img src={logo} alt="logo" />
+          <Link to="/Prime-finance"><img src={logo} alt="logo"/></Link>
         </div>
         <div className="menu">
           <ul className="menu-list">
-            <li className="menu-item"> <Link to="/sarti-finance">Versa Finance</Link></li>
-            <li className="menu-item"> <Link to="/about">Quem Somos</Link> </li>
-            <li className="menu-item"> <Link to="/solucoes">Soluções</Link> </li>
-            <li className="menu-item"> <Link to="/blog">Blog</Link> </li>
-            <li className="menu-item"> <Link to="/contato">Contato</Link> </li>
+            <li className="menu-item"> <Link to="/Prime-finance">Prime Finance</Link></li>
+            <li className="menu-item"> <Link to="/Prime-finance/about">Quem Somos</Link> </li>
+            <li className="menu-item"> <Link to="/Prime-finance/solucoes">Soluções</Link> </li>
+            <li className="menu-item"> <Link to="/Prime-finance/blog">Blog</Link> </li>
+            <li className="menu-item"> <Link to="/Prime-finance/contato">Contato</Link> </li>
           </ul>
         </div>
 

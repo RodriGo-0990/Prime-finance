@@ -20,7 +20,7 @@ function BannerAbout() {
             <div className='wrapper-banner-about'>
                 <div className='first-block-about'>
                     <h1>
-                    Versa Finance: Juntos, <span style={{color:'#20509F'}} > personalizamos</span> o futuro financeiro de sua empresa
+                    Prime Finance: Juntos, <span style={{color:'#20509F'}} > personalizamos</span> o futuro financeiro de sua empresa
                     </h1>
                 </div>
                 <div className='second-block-about'>
