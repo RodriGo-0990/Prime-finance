@@ -1,7 +1,7 @@
 import "../css/midSection.css"
 import { useEffect } from "react";
+import Askprime from "./sub-components/askPrime";
 import Button from "./sub-components/button-contact";
-import { FiArrowDownRight } from "react-icons/fi";
 import ScrollReveal from "scrollreveal";
 function midSection() {
     useEffect(() => {
@@ -29,9 +29,7 @@ function midSection() {
                     </div>
                     <div className="second-block">
                         <Button />
-                        <div className='ask-div'>
-                            <p><span><FiArrowDownRight /></span> Por que escolher a Prime Finance? </p>
-                        </div>
+                        <Askprime/>
                     </div>
                 </div>
             </div>

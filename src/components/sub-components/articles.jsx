@@ -1,6 +1,6 @@
 import { FiArrowRight } from 'react-icons/fi';
 import '../../css/articles.css'
-function articles({ foto, title }) {
+function articles({ foto, title, category }) {
     return (
         <>
             <div className='wrapper-article'>
@@ -8,6 +8,7 @@ function articles({ foto, title }) {
 
                     <div className='image-article' style={{ backgroundImage: `url(${foto})` }}></div>
                     <div className='title-article'>
+                        <h3>{category}</h3>
                         <h2>{title}</h2>    
                     </div>
                 </div>

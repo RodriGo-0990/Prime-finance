@@ -42,10 +42,16 @@
 .left-wrapper-articles .wrapper-article h2:hover{
     color: #20509f;
 }
+.right-wrapper-articles .wrapper-article{
+    height: 300px;
+}
 
 @media(max-width:970px){
     .container-blog{
         padding: 5em 1em;
+    }
+    .container-blog{
+        width: 100%;
     }
     .right-wrapper-articles{
         display: none;

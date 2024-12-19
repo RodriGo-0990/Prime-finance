@@ -2,7 +2,8 @@
     font-family: 'poppins';
     src: url(../Poppins/Poppins-Light.ttf);
 }
-.wrapper-article{
+
+.wrapper-article {
     width: 300px;
     height: 350px;
     display: flex;
@@ -11,65 +12,87 @@
     border-radius: 10px;
     box-shadow: 5px 8px 12px 1px #000000a2;
     transition: 1s;
-    font-family:'poppins';
+    font-family: 'poppins';
     cursor: pointer;
 }
-.article-title{
+
+.article-title {
     margin: 0;
     display: flex;
     flex-direction: column;
     height: 80%;
     color: black;
 }
-.article-title h2{
+
+.article-title h2 {
     text-align: start;
     transition: .3s
 }
-.image-article{
+
+.article-title h3 {
+    text-align: center;
+    background-color: #dee0df;
+    padding: 2px 6px;
+    width: 145px;
+    margin: 0;
+    margin-bottom: 2px;
+    color: #366459;
+    border-radius: 100px
+}
+
+.image-article {
     width: 100%;
     height: 100%;
     border-radius: 10px 10px 0 0;
     background-size: cover;
     background-position: center;
 }
-.title-article{
+
+.title-article {
     margin: 0;
     padding: 1em;
-    font-size:70%;
+    font-size: 70%;
 }
-.leia-mais{
+
+.leia-mais {
     margin: 0;
-    padding:1em;
+    padding: 1em;
     display: flex;
     align-items: center;
     align-self: end;
-    font-size:x-small;
+    font-size: x-small;
     color: black;
     transition: .3s ease-in-out;
 }
-.article-title h2:hover ,  .leia-mais:hover{
+
+.article-title h2:hover,
+.leia-mais:hover {
     color: #20509F;
 }
-@media(max-width:420px){
-    .wrapper-article{
+
+@media(max-width:420px) {
+    .wrapper-article {
         width: 100%;
     }
 }
-@media(min-width:450px) and (max-width:950px){
-    .wrapper-article{
+
+@media(min-width:450px) and (max-width:950px) {
+    .wrapper-article {
         width: 100%;
         height: 400px;
     }
 }
-@media(min-width:950px) and (max-width:1114px){
-    .wrapper-article{
-       margin: 0; 
-       width: 280px;
+
+@media(min-width:950px) and (max-width:1114px) {
+    .wrapper-article {
+        margin: 0;
+        width: 280px;
     }
 }
-@media(min-width:1440px){
-    .wrapper-article{
+
+@media(min-width:1440px) {
+    .wrapper-article {
         margin: 0;
         width: 400px;
-     }
+    }
 }

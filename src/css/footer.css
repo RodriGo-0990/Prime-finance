@@ -27,12 +27,11 @@
     height: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    text-align: center;
 }
 a img{
     margin: 0;  
-    width: 200px;
-    align-self: start;
+    width: 150px;
 }
 a{
     text-decoration: none;
@@ -40,7 +39,9 @@ a{
 }
 .logo-redes{
     margin:0;
+    margin-top: 10px;
     display: flex;
+    justify-content: center;
     gap: 23px;
 }
 .logo-redes svg{

@@ -1,9 +1,11 @@
 import '../css/banner.css'
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import ScrollReveal from 'scrollreveal';
 import { FiArrowDownRight } from "react-icons/fi";
 import { FaHandshake } from "react-icons/fa6";
 import Button from './sub-components/button-contact.jsx';
+import Askprime from './sub-components/askPrime.jsx';
 
 function banner() {
     useEffect(() => {
@@ -51,16 +53,14 @@ function banner() {
                     </div>
                     <div className='solutions'>
                         <div className='logo-solutions'>
-                            <FaHandshake color='#20509F' size={40}/>
+                            <FaHandshake color='#20509F' size={40} />
                         </div>
                         <p>Soluções que se adaptam ao seu perfil e objetivos para oferecer o melhor em serviços financeiros</p>
                     </div>
                 </div>
                 <div className="second-block">
                     <Button />
-                    <div className='ask-div'>
-                        <p><span><FiArrowDownRight /></span> Por que escolher a Prime Finance? </p>
-                    </div>
+                    <Askprime/>
                 </div>
 
             </div>

@@ -73,27 +73,32 @@
     border: none;
     font-size: large;
     font-weight: bold;
-    color: #ffffffaf;
     padding: 2em 2em;
     background-color: #1c6ab827;
     box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.658);
     transition: .3s ease-in-out;
 }
-
+.contact a {
+    color: #ffffffaf;
+}
 .contact:hover {
     background-color: #20519f69;
-    color: #fffefe;
     cursor: pointer;
+    transition: .3s;
+    & a{
+        transition: .3s;
+        color: #fffefe;
+    }
 }
 
-.ask-div>p {
+.ask-div>a {
     display: flex;
     align-items: center;
     font-size: medium;
     color: #dcdcdc;
 }
 
-.ask-div>p:hover {
+.ask-div>a:hover {
     color: #20509F;
     transition: .5s ease;
     cursor: pointer;

@@ -1,11 +1,17 @@
-import'../../css/banner.css'
+import { Link } from 'react-router-dom';
+import '../../css/banner.css'
 import { MdArrowOutward } from "react-icons/md";
 function buttonContact() {
     return (
         <>
             <div className="button-contact">
-                <button className="contact"> Fale com um especialista <span><MdArrowOutward /></span></button>
-            </div>
+                <button className="contact">
+                    <Link to={'/Prime-finance/contato'}>
+                        Fale com um especialista <span>
+                            <MdArrowOutward /></span>
+                    </Link>
+                </button>
+            </div >
         </>
     )
 }

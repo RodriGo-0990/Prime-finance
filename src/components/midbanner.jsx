@@ -1,9 +1,8 @@
 import '../css/midbanner.css'
 import { useEffect } from 'react';
 import ScrollReveal from 'scrollreveal';
-
+import Askprime from '../components/sub-components/askPrime.jsx'
 import Button from '../components/sub-components/button-contact.jsx'
-import { FiArrowDownRight } from 'react-icons/fi';
 function midBanner() {
     useEffect(() => {
         ScrollReveal().reveal('.wrapper-center',
@@ -28,9 +27,7 @@ function midBanner() {
                         </div>
                         <div className='second-block'>
                             <Button />
-                            <div className='ask-div'>
-                                <p><span><FiArrowDownRight /></span> Por que escolher a Prime Finance? </p>
-                            </div>
+                            <Askprime/>
                         </div>
                     </div>
                 </div>

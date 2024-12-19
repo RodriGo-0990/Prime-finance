@@ -13,7 +13,7 @@ import { useEffect } from 'react';
 
 function Contato() {
   useEffect(function () {
-    ScrollReveal().reveal('.title-contato h1', {
+    ScrollReveal.reveal('.title-contato h1', {
       duration: 1500,
       distance: '30px',
       origin: 'left'

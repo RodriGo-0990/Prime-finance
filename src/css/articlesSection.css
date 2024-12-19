@@ -5,7 +5,7 @@
 
 .wrapper-articles {
     width: 90%;
-    color: #20509F;
+    color: #20509f;
     font-family: 'poppins-semibold';
 }
 
@@ -24,12 +24,13 @@
     font-size: medium;
 }
 
-.ask-div-articles p:hover {
-    transition: .3s ease-in-out;
+.ask-div-articles a {
+    color: #20509f
 }
 
-.ask-div-articles p:hover {
+.ask-div-articles a:hover {
     color: black;
+    transition: .3s ease-in-out;
     cursor: pointer;
 }
 

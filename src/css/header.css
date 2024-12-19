@@ -22,8 +22,8 @@
     cursor: pointer;
 }
 
-a > img {
-    width: 150px;
+.logo a> img {
+    width: 100px;
 }
 
 .menu-list {
@@ -126,10 +126,6 @@ button{
 @media(max-width:500px) {
     .wrapper {
         padding: 1em;
-    }
-
-    a >img {
-        width: 100px;
     }
 
     .head-sidemenu {

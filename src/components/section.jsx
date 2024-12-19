@@ -2,7 +2,7 @@ import '../css/section.css'
 import { HiArrowTopRightOnSquare } from "react-icons/hi2";
 import React, { useEffect } from 'react';
 import ScrollReveal from 'scrollreveal';
-
+import { Link } from 'react-router-dom';
 import CardNumbers from './sub-components/card-numbers';
 
 function section() {
@@ -17,12 +17,12 @@ function section() {
             distance: '20px'
         });
         ScrollReveal().reveal('.ask-div-section', {
-            delay:300,
+            delay: 300,
             duration: 1500,
             distance: '50px',
             origin: 'right',
         });
-    },[])
+    }, [])
     return (
         <>
             <div className="wrapper-section">
@@ -37,14 +37,18 @@ function section() {
                         </p>
                     </div>
                     <div className='ask-div-section'>
-                        <p >Saiba mais sobre nós <HiArrowTopRightOnSquare/> </p>
+                        <Link to={'/Prime-finance/about'}>
+                            <span>
+                                Saiba mais sobre nós <HiArrowTopRightOnSquare />
+                            </span>
+                        </Link>
                     </div>
                 </div>
                 <div className='wrapper-card'>
-                    <CardNumbers number={4} text={'Bilhões em Cessões de Crédito'} ms={1000}/>
+                    <CardNumbers number={4} text={'Bilhões em Cessões de Crédito'} ms={1000} />
                     <CardNumbers number={11} text={'Anos no mercado'} ms={400} />
                     <CardNumbers number={3000} text={'Operações sem Default'} ms={0.11} />
-                    <CardNumbers number={75} text={'Instituíções Financeiras Parceiras'} ms={50}/>
+                    <CardNumbers number={75} text={'Instituíções Financeiras Parceiras'} ms={50} />
                 </div>
             </div>
         </>

@@ -35,6 +35,9 @@
     .midbanner-background{
         background-position-x: 70%;
     }
+    .wrapper-midbanner{
+        padding: 2em;
+    }
 }
 @media(min-width: 695px) and  (max-width:890px ){
     .midbanner-background{
