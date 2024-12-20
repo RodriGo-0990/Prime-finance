@@ -13,11 +13,11 @@ export default function header() {
     <>
       <div className="wrapper">
         <div className="logo">
-          <Link to="/Prime-finance"><img src={logo} alt="logo"/></Link>
+          <Link to="/"><img src={logo} alt="logo"/></Link>
         </div>
         <div className="menu">
           <ul className="menu-list">
-            <li className="menu-item"> <Link to="/Prime-finance">Prime Finance</Link></li>
+            <li className="menu-item"> <Link to="/">Prime Finance</Link></li>
             <li className="menu-item"> <Link to="/Prime-finance/about">Quem Somos</Link> </li>
             <li className="menu-item"> <Link to="/Prime-finance/solucoes">Soluções</Link> </li>
             <li className="menu-item"> <Link to="/Prime-finance/blog">Blog</Link> </li>

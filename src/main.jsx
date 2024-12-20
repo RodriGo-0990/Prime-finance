@@ -6,7 +6,7 @@ import Solucoes from './pages/solucoes.jsx'
 import Blog from './pages/blog.jsx'
 import Contato from './pages/contato.jsx'
 import ArticlePage from './pages/articlePage.jsx'
-import { HashRouter, BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter,Routes, Route } from 'react-router-dom'
 import MenuProvider from './context/menuContext.jsx'
 import ScrollToTop from './context/scrollToTop.jsx'
 
