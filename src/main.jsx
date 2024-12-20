@@ -6,18 +6,18 @@ import Solucoes from './pages/solucoes.jsx'
 import Blog from './pages/blog.jsx'
 import Contato from './pages/contato.jsx'
 import ArticlePage from './pages/articlePage.jsx'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, BrowserRouter, Routes, Route } from 'react-router-dom'
 import MenuProvider from './context/menuContext.jsx'
 import ScrollToTop from './context/scrollToTop.jsx'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
-          <ScrollToTop/>
+    <HashRouter>
+      <ScrollToTop/>
       <MenuProvider>
         <Routes>
-          <Route path='/Prime-finance' element={<App />} />
+          <Route path='/' element={<App />} />
           <Route path='/Prime-finance/about' element={<About />} />
           <Route path='/Prime-finance/solucoes' element={<Solucoes />} />
           <Route path='/Prime-finance/blog' element={<Blog />} />
@@ -25,6 +25,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path='/Prime-finance/articlePage' element={<ArticlePage />} />
         </Routes>
       </MenuProvider>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>,
 )
