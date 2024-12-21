@@ -3,7 +3,7 @@ import React, { useEffect } from 'react'
 import Cards from './sub-components/cards.jsx';
 import ScrollReveal from 'scrollreveal';
 
-import { BsBuilding } from "react-icons/bs"; 
+import { BsBuilding } from "react-icons/bs";
 import { IoDocumentTextOutline } from "react-icons/io5";
 import { FaHatCowboy } from "react-icons/fa";
 import { PiCertificate } from "react-icons/pi";
@@ -18,9 +18,9 @@ import bndes from "../assets/bndes.webp"
 import black from "../assets/0.jpg"
 
 
-function cardsSection({title}) {
+function cardsSection({ title }) {
     useEffect(() => {
-       
+
         ScrollReveal().reveal('.div-cards',
             {
                 duration: 1500,
@@ -35,8 +35,7 @@ function cardsSection({title}) {
                 <div className='div-cards'>
                     <Cards logo={<BsBuilding color='white' size={50}></BsBuilding>}
                         foto={cred}
-                        title={
-                            'Crédito com garantia imobiliária'} />
+                        title={'Crédito com garantia imobiliária'} />
                     <Cards logo={<IoDocumentTextOutline color='white' size={50} />}
                         foto={receb}
                         title={
@@ -45,11 +44,11 @@ function cardsSection({title}) {
                         foto={rural}
                         title={
                             'Crédito Rural'} />
-                    <Cards logo={<PiCertificate color='white' size={50}/>}
+                    <Cards logo={<PiCertificate color='white' size={50} />}
                         foto={deben}
                         title={
                             'CRI, CRA e Emissão de Debêntures'} />
-                    <Cards logo={<FaMoneyCheckAlt color='white' size={50}/>}
+                    <Cards logo={<FaMoneyCheckAlt color='white' size={50} />}
                         foto={bndes}
                         title={
                             'Finem, Finame, Pronamp, BNDES'} />

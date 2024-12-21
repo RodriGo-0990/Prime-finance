@@ -9,7 +9,7 @@ function footer() {
             <div className='wrapper-footer'>
                 <div className='first-block-footer'>
                     <div className='prime-div'>
-                        <Link to={'/Prime-finance'}>
+                        <Link to={'/'}>
                             <img src={logo} alt='logo'></img>
                         </Link>
                         <p>Na Prime Finance, você tem a liberdade de se Autofinanciar e investir no crescimento da sua empresa ou em seus projetos pessoais.</p>
@@ -26,7 +26,7 @@ function footer() {
                                 <h2>Links</h2>
                             </div>
                             <ul>
-                                <Link to={'/Prime-finance'}>
+                                <Link to={'/'}>
                                     <li>Home</li>
                                 </Link>
                                 <Link to={'/Prime-finance/about'}>
@@ -57,7 +57,9 @@ function footer() {
                                 <h2>Contatos</h2>
                             </div>
                             <ul>
-                                <li>Fale conosco</li>
+                                <Link to={'/Prime-finance/contato'}>
+                                    <li>Contato</li>
+                                </Link>
                             </ul>
                         </div>
                     </div>
@@ -75,7 +77,7 @@ function footer() {
                         Nós respeitamos a sua privacidade e queremos garantir que você tenha a melhor
                         experiência possível no nosso site, sabendo que seus dados estão seguros e protegidos.
                         <a style={{ color: 'orange', cursor: 'pointer' }} > Acesse nossa política de privacidade.</a></p>
-                    <p>CNPJ: 38.311.120/0002-63</p>
+                    <p>Desenvolvido por: <a style={{ fontWeight:'900', color:'white', cursor: 'pointer' }} href='https://rodrigo-0990.github.io/Portfolio/' target='blank'>Rodrigo Rodrigues</a></p>
                 </div>
             </div>
         </>

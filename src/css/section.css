@@ -41,9 +41,7 @@
     transition:.5s ease;
     cursor: pointer;
 }
-.ask-div-section > a img{
-    width: 38px;
-}
+
 .wrapper-card{
     position: relative;
     width: 100%;

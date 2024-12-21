@@ -20,14 +20,16 @@
     width: 100%;
     justify-items: center;
     & h1 {
+        padding: 0 1em;
         color: #fea603;
-        font-size: 56px;
+        font-size: 40px;
         text-align: center;
         line-height: 1em;
         margin-bottom: 22px;
         font-family: 'Poppins-semibold'
     }
     & h3{
+        margin-bottom: 20px;
         color: aliceblue;
         text-align: center;
     }
@@ -53,7 +55,7 @@
     padding-bottom: 3em;
 }
 .content-article-page{
-    text-align: center;
+    text-align: justify;
     line-height: 2px;
     background-color: #ffffffeb;
     width: 80%;

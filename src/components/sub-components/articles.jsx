@@ -1,6 +1,8 @@
 import { FiArrowRight } from 'react-icons/fi';
 import '../../css/articles.css'
-function articles({ foto, title, category }) {
+import { Link } from 'react-router-dom';
+function articles({ foto, title, category, content }) {
+    const data = { category: category, image: foto, title: title, content: content };
     return (
         <>
             <div className='wrapper-article'>
@@ -9,11 +11,15 @@ function articles({ foto, title, category }) {
                     <div className='image-article' style={{ backgroundImage: `url(${foto})` }}></div>
                     <div className='title-article'>
                         <h3>{category}</h3>
-                        <h2>{title}</h2>    
+                        <Link to={'/Prime-finance/articlePage'} state={data}>
+                            <h2>{title}</h2>
+                        </Link>
                     </div>
                 </div>
                 <div className='leia-mais'>
-                    <h2>Leia mais</h2><FiArrowRight color='black' size={20} />
+                    <Link to={'/Prime-finance/articlePage'} state={data}>
+                        <h2>Leia mais</h2><FiArrowRight color='black' size={20} />
+                    </Link>
                 </div>
             </div>
         </>

@@ -16,7 +16,7 @@ function sideMenu() {
             </button>
           </div>
           <ul className="sidemenu-list">
-          <li className="menu-item" onClick={setMenu}> <Link to="/Prime-finance">Prime Finance</Link></li>
+          <li className="menu-item" onClick={setMenu}> <Link to="/">Prime Finance</Link></li>
             <li className="menu-item" onClick={setMenu}> <Link to="/Prime-finance/about">Quem Somos</Link> </li>
             <li className="menu-item" onClick={setMenu}> <Link to="/Prime-finance/solucoes">Soluções</Link> </li>
             <li className="menu-item" onClick={setMenu}> <Link to="/Prime-finance/blog">Blog</Link> </li>

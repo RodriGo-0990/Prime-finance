@@ -1,6 +1,5 @@
 import React from "react";
 import "../css/articlePage.css";
-import image from "../assets/articles/article.webp";
 import Header from "../components/header";
 import MidBanner from "../components/midbanner";
 import Footer from "../components/footer";
@@ -42,7 +41,7 @@ function articlePage() {
                 </div>
                 <div className="article-page-background">
                     <div className="content-article-page">
-                        <p>conteúdo do artigo</p>
+                        <>{data.content}</>
                     </div>
                 </div>
             </div>

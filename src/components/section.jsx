@@ -38,9 +38,7 @@ function section() {
                     </div>
                     <div className='ask-div-section'>
                         <Link to={'/Prime-finance/about'}>
-                            <span>
-                                Saiba mais sobre nós <HiArrowTopRightOnSquare />
-                            </span>
+                            Saiba mais sobre nós<span><HiArrowTopRightOnSquare /></span>
                         </Link>
                     </div>
                 </div>

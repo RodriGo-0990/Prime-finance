@@ -16,15 +16,15 @@
     cursor: pointer;
 }
 
-.article-title {
+.article-title{
     margin: 0;
     display: flex;
     flex-direction: column;
     height: 80%;
-    color: black;
 }
 
 .article-title h2 {
+    color: black;
     text-align: start;
     transition: .3s
 }
@@ -53,20 +53,30 @@
     padding: 1em;
     font-size: 70%;
 }
+.leia-mais{
+    margin: 0;
+}
 
-.leia-mais {
+.leia-mais a{
     margin: 0;
     padding: 1em;
     display: flex;
-    align-items: center;
     align-self: end;
     font-size: x-small;
     color: black;
     transition: .3s ease-in-out;
 }
+.leia-mais a{
+    & h2{
+        margin: 0;
+    }
+    & svg{
+        margin: 0;
+    }
+}
 
 .article-title h2:hover,
-.leia-mais:hover {
+.leia-mais a:hover {
     color: #20509F;
 }
 

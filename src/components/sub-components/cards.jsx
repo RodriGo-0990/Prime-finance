@@ -2,8 +2,8 @@ import '../../css/cards.css'
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
-function cards({ foto, logo, title }) {
-    const data = { category: "Serviços", image: foto, title: title };
+function cards({ foto, logo, title, content }) {
+    const data = { category: "Serviços", image: foto, title: title, content: content };
     return (
         <>
             <div className="wrapper-card-options" style={{ backgroundImage: `url(${foto})` }}>
