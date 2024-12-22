@@ -22,7 +22,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path='/Prime-finance/solucoes' element={<Solucoes />} />
           <Route path='/Prime-finance/blog' element={<Blog />} />
           <Route path='/Prime-finance/contato' element={<Contato />} />
-          <Route path='/Prime-finance/articlePage' element={<ArticlePage />} />
+          <Route path='/Prime-finance/articlePage/:id' element={<ArticlePage />} />
         </Routes>
       </MenuProvider>
     </HashRouter>

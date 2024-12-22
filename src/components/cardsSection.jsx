@@ -8,7 +8,7 @@ import { IoDocumentTextOutline } from "react-icons/io5";
 import { FaHatCowboy } from "react-icons/fa";
 import { PiCertificate } from "react-icons/pi";
 import { FaMoneyCheckAlt } from "react-icons/fa";
-import { MdOutlineHelp } from "react-icons/md";
+import { GiOpenBook } from "react-icons/gi";
 
 import cred from "../assets/creditoImobiliário.jpg";
 import receb from "../assets/recebiveis.jpg"
@@ -35,27 +35,39 @@ function cardsSection({ title }) {
                 <div className='div-cards'>
                     <Cards logo={<BsBuilding color='white' size={50}></BsBuilding>}
                         foto={cred}
-                        title={'Crédito com garantia imobiliária'} />
+                        title={'Crédito com garantia imobiliária'}
+                        page={"articlePage"}
+                        contentId={"8"} />
                     <Cards logo={<IoDocumentTextOutline color='white' size={50} />}
                         foto={receb}
                         title={
-                            'Antecipação de recebíveis'} />
+                            'Antecipação de recebíveis'}
+                        page={"articlePage"}
+                        contentId={"9"} />
                     <Cards logo={<FaHatCowboy color='white' size={50} />}
                         foto={rural}
                         title={
-                            'Crédito Rural'} />
+                            'Crédito Rural'}
+                        page={"articlePage"}
+                        contentId={"10"} />
                     <Cards logo={<PiCertificate color='white' size={50} />}
                         foto={deben}
                         title={
-                            'CRI, CRA e Emissão de Debêntures'} />
+                            'CRI, CRA e Emissão de Debêntures'}
+                        page={"articlePage"}
+                        contentId={"11"} />
                     <Cards logo={<FaMoneyCheckAlt color='white' size={50} />}
                         foto={bndes}
                         title={
-                            'Finem, Finame, Pronamp, BNDES'} />
-                    <Cards logo={<MdOutlineHelp color='white' size={25} />}
+                            'Finem, Finame, Pronamp, BNDES'}
+                        page={"articlePage"}
+                        contentId={"12"} />
+                    <Cards logo={<GiOpenBook color='white' size={25} />}
                         foto={black}
                         title={
-                            'Saiba mais sobre nossas soluções em crédito personalizado'} />
+                            'Conteúdos para impulsionar o seu negócio'}
+                        page={"blog"}
+                        contentId={""} />
 
                 </div>
             </div>

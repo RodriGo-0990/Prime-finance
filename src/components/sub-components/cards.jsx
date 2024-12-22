@@ -2,8 +2,8 @@ import '../../css/cards.css'
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
-function cards({ foto, logo, title, content }) {
-    const data = { category: "Serviços", image: foto, title: title, content: content };
+function cards({ foto, logo, title, page, contentId }) {
+    const data = { category: "Serviços", image: foto, title: title };
     return (
         <>
             <div className="wrapper-card-options" style={{ backgroundImage: `url(${foto})` }}>
@@ -15,7 +15,7 @@ function cards({ foto, logo, title, content }) {
                         </div>
                     </div>
                     <div className="arrow-card">
-                        <Link to={'/Prime-finance/articlePage'} state={ data }>
+                        <Link to={`/Prime-finance/${page}/${contentId}`} state={ data }>
                             <FaArrowRightLong size={30} color='white'></FaArrowRightLong>
                         </Link>
                     </div>

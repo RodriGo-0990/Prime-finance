@@ -11,7 +11,7 @@
 .container-article-page {
     font-family: 'Poppins-light';
     width: 100%;
-    background-color:black
+    background-color: black
 }
 
 .article-page-title {
@@ -19,6 +19,7 @@
     padding: 5em 0;
     width: 100%;
     justify-items: center;
+
     & h1 {
         padding: 0 1em;
         color: #fea603;
@@ -26,9 +27,11 @@
         text-align: center;
         line-height: 1em;
         margin-bottom: 22px;
-        font-family: 'Poppins-semibold'
+        font-family: 'Poppins-semibold';
+        width: 90%;
     }
-    & h3{
+
+    & h3 {
         margin-bottom: 20px;
         color: aliceblue;
         text-align: center;
@@ -40,6 +43,7 @@
     box-shadow: 6px 4px 5px rgba(0, 0, 0, 0.437);
     width: 650px;
     height: 400px;
+
     & img {
         width: 100%;
         height: 100%;
@@ -47,41 +51,68 @@
 }
 
 .article-page-background {
-    background:url('../assets/building.webp');
+    background: url('../assets/building.webp');
     background-color: #b4d7d7b5;
     background-blend-mode: overlay;
-    background-size:cover;
-    height: 1000px;
+    background-size: cover;
+    height: fit-content;
     padding-bottom: 3em;
 }
-.content-article-page{
+
+.content-article-page {
     text-align: justify;
-    line-height: 2px;
     background-color: #ffffffeb;
     width: 80%;
     height: 100%;
     padding: 2em;
-    & h1{
+
+    & h1 {
         font-size: 24px;
+        margin-bottom: 10px;
         font-weight: bold;
         color: grey;
     }
+
+    & p {
+        margin-bottom: 20px;
+    }
 }
-@media(max-width:430px){
-    .image-article-page{
+
+@media(max-width:430px) {
+    .image-article-page {
         width: 98%;
         height: 300px;
     }
 }
-@media (min-width:431px) and (max-width:685px){
-    .image-article-page{
+
+@media (min-width:431px) and (max-width:685px) {
+    .image-article-page {
         width: 400px;
         height: 300px;
     }
 }
-@media (min-width:686px)and(max-width:850px){
-    .image-article-page{
+
+@media (min-width:686px)and(max-width:850px) {
+    .image-article-page {
         width: 500px;
         height: 370px;
     }
+}
+
+@media(max-width: 522px) {
+    .article-page-background {
+        background-size: contain;
+    }
+
+    .content-article-page {
+        width: 95%;
+    }
+    .article-page-title{
+        & h1{
+            font-size: 24px;
+            width: 100%;
+        }
+    }
+
+
 }

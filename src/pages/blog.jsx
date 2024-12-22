@@ -14,6 +14,8 @@ import Image3 from '../assets/articles/article3.webp'
 import Image4 from '../assets/articles/article4.webp'
 import Image5 from '../assets/articles/article5.webp'
 import Image6 from '../assets/articles/article6.webp'
+import Image7 from '../assets/articles/article7.webp'
+
 
 import ScrollReveal from 'scrollreveal'
 import { useEffect } from 'react'
@@ -34,14 +36,14 @@ function Blog() {
         <Header />
         <div className='container-blog'>
           <div className='left-wrapper-articles'>
-            <Article foto={Image4} title={'Como preparar sua empresa para uma auditoria financeira'} category={"Gestão Empresarial"} />
-            <Article foto={Image5} title={'Descubra como a tecnologia está transformando o crédito'} category={"Gestão Empresarial"} />
-            <Article foto={Image6} title={'Superando as barreiras do crédito'}category={"Crédito Empresarial"} />
+            <Article foto={Image4} title={'10 passos para escolher o melhor crédito para sua empresa'} category={"Crédito Empresarial"} contentId={"2"} />
+            <Article foto={Image5} title={'Impactos econômicos das enchentes no RS'} category={"Gestão Empresarial"} contentId={"5"}/>
+            <Article foto={Image6} title={'Soluções para empresas que querem mais'}category={"Crédito Empresarial"} contentId={"6"}/>
           </div>
           <div className='right-wrapper-articles'>
-            <Article foto={Image1} title={'Como preparar sua empresa para uma auditoria financeira'} category={"Gestão Empresarial"}/>
-            <Article foto={Image2} title={'Descubra como a tecnologia está transformando o crédito'}category={"Gestão Empresarial"} />
-            <Article foto={Image3} title={'Superando as barreiras do crédito'} category={"Crédito Empresarial"} />
+            <Article foto={Image7} title={'O Poder da Expansão: Como as Linhas de Crédito podem Multiplicar Seu Negócio'} category={"Gestão Empresarial"} contentId={"7"}/>
+            <Article foto={Image2} title={'Descubra como a tecnologia está transformando o crédito'}category={"Gestão Empresarial"} contentId={"4"}/>
+            <Article foto={Image3} title={'Superando as barreiras do crédito'} category={"Crédito Empresarial"} contentId={"3"}/>
           </div>
         </div>
       </div>

@@ -5,6 +5,7 @@ import SectionCards from '../components/cardsSection.jsx'
 import Footer from '../components/footer.jsx'
 import Void from '../components/void.jsx'
 import MidSection from '../components/midsection.jsx'
+import MidBanner from '../components/midbanner.jsx'
 import ScrollReveal from 'scrollreveal'
 import { useEffect } from 'react'
 
@@ -33,6 +34,8 @@ function Solucoes() {
       <Void />
       <MidSection />
       <Void />
+      <MidBanner/>
+      <Void/>
       <Footer />
     </>
   )

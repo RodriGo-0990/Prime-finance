@@ -4,14 +4,50 @@ import Header from "../components/header";
 import MidBanner from "../components/midbanner";
 import Footer from "../components/footer";
 import Void from "../components/void";
-import { useLocation } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 import ScrollReveal from "scrollreveal";
 import { useEffect } from "react";
+
+// artigos
+import ArticleAuditoria from "../articles/article-auditoria";
+import DezPassos from "../articles/10passos";
+import ArticleBarreiras from "../articles/article-barreiras_de_credito";
+import ArticleTecnologia from "../articles/article-tecnologia";
+import Enchentes from "../articles/enchentes.jsx";
+import SolucoesParaEmpresa from "../articles/solucoesParaEmpresa.jsx";
+import PoderDaExpansao from "../articles/poder_da_expansao.jsx";
+//serviços
+import CredGarantiaImobiliaria from "../articles/serviços/credito_garantia_imobiliaria.jsx";
+import AntecipacaoDeRecebiveis from "../articles/serviços/antecipacao_recebiveis.jsx";
+import CreditoRural from "../articles/serviços/credito_rural.jsx";
+import Cricra from "../articles/serviços/cri_cra.jsx";
+import Finem from "../articles/serviços/finem.jsx";
+
+const articlesMap ={
+    //artigos
+    1:<ArticleAuditoria/>,
+    2:<DezPassos/>,
+    3:<ArticleBarreiras/>, 
+    4:<ArticleTecnologia/>,
+    5:<Enchentes/>,
+    6:<SolucoesParaEmpresa/>,
+    7:<PoderDaExpansao/>,
+    //serviços
+    8:<CredGarantiaImobiliaria/>,
+    9:<AntecipacaoDeRecebiveis/>,
+    10:<CreditoRural/>,
+    11:<Cricra/>,
+    12:<Finem/>,
+    13:<></>
+}
 
 
 function articlePage() {
     const location = useLocation();
     const data = location.state;
+    const { id } = useParams();
+    const content = articlesMap[id];
+
     useEffect(function (){
         ScrollReveal().reveal('.article-page-title h1',{
             duration:2300,
@@ -41,7 +77,7 @@ function articlePage() {
                 </div>
                 <div className="article-page-background">
                     <div className="content-article-page">
-                        <>{data.content}</>
+                        <>{content}</>
                     </div>
                 </div>
             </div>
