@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function credGarantiaImobiliaria() {
     return (
@@ -26,7 +27,7 @@ function credGarantiaImobiliaria() {
                 1. Home Equity:
             </h1>
             <p>
-                Esta é uma das modalidades mais populares de crédito com garantia imobiliária. No Home Equity, o tomador do crédito utiliza o valor de sua casa ou propriedade para obter um empréstimo. É uma excelente maneira de liberar o capital ‘preso’ em um imóvel para usar em outras finalidades, como investir em um negócio ou financiar uma reforma.
+                Esta é uma das modalidades mais populares de crédito com garantia imobiliária. No <Link to="/Prime-finance/homeEquity" style={{"cursor":"pointer" , color:"orange", fontWeight:"900"}}>Home Equity</Link>, o tomador do crédito utiliza o valor de sua casa ou propriedade para obter um empréstimo. É uma excelente maneira de liberar o capital ‘preso’ em um imóvel para usar em outras finalidades, como investir em um negócio ou financiar uma reforma.
             </p>
 
             <h1>

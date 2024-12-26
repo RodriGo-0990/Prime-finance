@@ -48,7 +48,9 @@ function footer() {
                             <ul>
                                 <li>Credito sob medida</li>
                                 <li>Sessão Estratégica</li>
-                                <li>Home Equity</li>
+                                <Link to={'/Prime-finance/homeEquity'}>
+                                    <li>Home Equity</li>
+                                </Link>
                             </ul>
                         </div>
 

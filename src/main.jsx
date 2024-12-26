@@ -6,6 +6,7 @@ import Solucoes from './pages/solucoes.jsx'
 import Blog from './pages/blog.jsx'
 import Contato from './pages/contato.jsx'
 import ArticlePage from './pages/articlePage.jsx'
+import HomeEquity from './pages/homeEquity.jsx'
 import { HashRouter,Routes, Route } from 'react-router-dom'
 import MenuProvider from './context/menuContext.jsx'
 import ScrollToTop from './context/scrollToTop.jsx'
@@ -23,6 +24,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path='/Prime-finance/blog' element={<Blog />} />
           <Route path='/Prime-finance/contato' element={<Contato />} />
           <Route path='/Prime-finance/articlePage/:id' element={<ArticlePage />} />
+          <Route path='/Prime-finance/homeEquity' element={<HomeEquity/>}/>
         </Routes>
       </MenuProvider>
     </HashRouter>
