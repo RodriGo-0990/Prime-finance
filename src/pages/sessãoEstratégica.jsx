@@ -31,9 +31,9 @@ function SessãoEstratégica() {
             <p>Na Prime Finance, oferecemos sessões estratégicas personalizadas para ajudar sua empresa a alcançar seus objetivos financeiros. Nossas sessões são conduzidas por especialistas experientes que irão trabalhar com você para desenvolver um plano financeiro personalizado que atenda às suas necessidades específicas.</p>
           </div>
           <div className='cards-sessao'>
-            <Cards title={'Análise de fluxo de caixa'} subtitle={'Entenda a saúde financeira da sua empresa e identifique oportunidades de melhoria.'} image={'/assets/cards/fluxoCaixa.webp'} />
-            <Cards title={'Planejamento financeiro'} subtitle={'Defina metas realistas e crie um plano para alcançá-las.'} image={'/assets/cards/planejamento.webp'} />
-            <Cards title={'Gestão de riscos'} subtitle={'Identifique e mitigue os riscos financeiros que podem afetar seu negócio.'} image={'/assets/cards/riscos.webp'} />
+            <Cards title={'Análise de fluxo de caixa'} subtitle={'Entenda a saúde financeira da sua empresa e identifique oportunidades de melhoria.'}/>
+            <Cards title={'Planejamento financeiro'} subtitle={'Defina metas realistas e crie um plano para alcançá-las.'}  />
+            <Cards title={'Gestão de riscos'} subtitle={'Identifique e mitigue os riscos financeiros que podem afetar seu negócio.'} />
           </div>
         </div>
       </div>
