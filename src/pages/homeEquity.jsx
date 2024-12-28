@@ -9,12 +9,15 @@ import Header from "../components/header";
 import Cards from "../components/sub-components/cardsAbout.jsx"
 import Void from "../components/void";
 import MidBanner from "../components/midbanner";
+import MidSection from "../components/midsection";
 import Faq from "../components/sub-components/faq-component.jsx";
 import Footer from "../components/footer";
 
 import FirstStep from "../components/form-components/firstStep.jsx";
 import SecondStep from "../components/form-components/secondStep.jsx";
 import ThirdStep from "../components/form-components/thirdStep.jsx";
+import Loader from "../components/sub-components/loading.jsx"
+import Error from "../components/sub-components/serverError.jsx"
 
 import ScrollReveal from "scrollreveal";
 import { useEffect, useState } from "react";
@@ -24,11 +27,19 @@ function homeEquity() {
     const [step, setStep] = useState(1);
 
     function handleNextStep() {
-        if (step != 3) {
-            setStep(step + 1);
+        const currentStep = step;
+        setStep(0);
+        if ( currentStep <= 3) {
+            
+            setTimeout(() => {
+                setStep(currentStep + 1);
+            }, 2000);
+        }else{
+            setTimeout(() => {
+                setStep(4);
+            }, 2000);
         }
-    }
-
+      }
 
     useEffect(() => {
         const step1 = document.getElementById("pass-1");
@@ -55,12 +66,16 @@ function homeEquity() {
 
     const renderContent = () => {
         switch (step) {
+            case 0:
+                return <Loader />;
             case 1:
                 return <FirstStep />;
             case 2:
                 return <SecondStep />;
             case 3:
                 return <ThirdStep />;
+            case 4:
+                return <Error/>
             default:
                 return null;
         }
@@ -85,6 +100,8 @@ function homeEquity() {
                         </div>
                         <div className="text-equity">
                             <p>Utilize o potencial oculto do seu imóvel para financiar sua expansão de negócios ou alcançar suas metas financeiras.<br /> <span style={{ color: "#20509F", fontWeight: 'bold' }}>Experimente a verdadeira liberdade financeira.</span></p>
+                            <br/>
+                            <p>Faça uma simulação do seu crédito e obtenha condições exclusivas.</p>
                         </div>
                     </div>
                     <div className="second-block">
@@ -106,10 +123,10 @@ function homeEquity() {
                             </div>
                         </div>
                         <form className="form-equity"
-                        onSubmit={(e) => {
-                            e.preventDefault(); // Impede o envio padrão do formulário
-                            handleNextStep(); // Avança para o próximo passo
-                          }}>
+                            onSubmit={(e) => {
+                                e.preventDefault(); // Impede o envio padrão do formulário
+                                handleNextStep(); // Avança para o próximo passo
+                            }}>
                             {renderContent()}
                             <button id="button-equity" type='submit' style={{ marginTop: '20px' }}>Proximo</button>
                         </form>
@@ -129,11 +146,13 @@ function homeEquity() {
                     <Cards logo={<FaMoneyBillWave size={40} color="#13366f" />}
                         title={"Soluções financeiras personalizadas"}
                         text={"Compreendemos que cada cliente tem necessidades únicas. Nossa abordagem sob medida garante que oferecemos as soluções que melhor atendem às suas circunstâncias específicas"} />
-                    <Cards logo={<RiCustomerService2Fill size={40} color="#13366f" />}
+                    {/* <Cards logo={<RiCustomerService2Fill size={40} color="#13366f" />}
                         title={"Atendimento ao cliente excepcional"}
-                        text={"Nossos consultores financeiros dedicados estão sempre disponíveis para ajudá-lo a navegar por suas opções e garantir que você esteja totalmente informado e confortável com suas decisões financeiras"} />
+                        text={"Nossos consultores financeiros dedicados estão sempre disponíveis para ajudá-lo a navegar por suas opções e garantir que você esteja totalmente informado e confortável com suas decisões financeiras"} /> */}
                 </div>
             </section>
+            <Void/>
+            <MidSection/>
             <Void />
             <MidBanner />
             <Void />
@@ -142,10 +161,11 @@ function homeEquity() {
                     <h1>Perguntas frequentes</h1>
                 </div>
                 <div className="faq-wrapper">
-                    <Faq question={"Quais são os principais tipos de creditos empresariais disponíves?"} answer={"As opções de crédito para sua empresa são inúmeras, indo desde linhas de crédito para capital de giro até financiamentos para expansão e inovação. A chave é encontrar a solução perfeita para o seu plano de crescimento."} />
-                    <Faq question={"como o crédito empresarial pode impulsionar o crescimento da minha empresa? "} answer={"Com o crédito empresarial, as possibilidades são ilimitadas. Acesso a novas tecnologias, expansão de mercados, aumento da produção - tudo é possível com o financiamento adequado."} />
-                    <Faq question={"Minha empresa é nova, posso conseguir crédito empresarial?"} answer={"Certamente! Bancos e instituições financeiras oferecem produtos especialmente desenvolvidos para startups e novos negócios. É o impulso inicial que seu sonho empreendedor precisa."} />
-                    <Faq question={"O que é melhor para minha empresa, crédito ou financiamento?"} answer={"Empréstimo ou financiamento, qual a melhor escolha? A resposta depende de suas necessidades específicas. Nossos especialistas podem ajudá-lo a tomar a melhor decisão para o seu negócio."} />
+                    <Faq question={"Posso usar imoveis de terceiros como garantia no Home Equity?"} answer={"Sim, é possível! Contanto que o proprietário esteja de acordo, o imóvel de terceiros pode ser a chave para desbloquear seu potencial financeiro."} />
+                    <Faq question={"O imóvel precia estar averbado para solicitar o Home Equity? "} answer={"Sim, a averbação do imóvel é essencial. Trata-se da garantia de que o imóvel está em conformidade legal, proporcionando segurança tanto para você quanto para a instituição financeira."} />
+                    <Faq question={"Quais tipos de imóveis posso usar no Home Equity?"} answer={"Seja residencial ou comercial, urbano ou rural, seu imóvel pode ser um ativo valioso na busca por crédito. Descubra o poder escondido em suas propriedades!"} />
+                    <Faq question={"Posso cmpor renda com pessoa juridica ou outras pessoas físicas?"} answer={"Com certeza! Compor renda permite que você potencialize seu poder de obtenção de crédito, acelerando o crescimento do seu negócio. Unir forças nunca foi tão lucrativo!"} />
+                    <Faq question={"Estou negativado, ainda assim posso solicitar o Home Equity?"} answer={"Sim, ainda há esperança! O Home Equity pode ser uma solução viável mesmo para quem está negativado. Porque acreditamos no seu potencial e na sua capacidade de superar obstáculos."} />
                 </div>
 
             </div>

@@ -38,6 +38,17 @@
     .wrapper-midbanner{
         padding: 2em;
     }
+    .wrapper-midbanner > .first-block{
+        width: 100%;
+        & h1{
+            font-size:2rem;
+        }
+    }
+    .text-midbanner{
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+    }
 }
 @media(min-width: 695px) and  (max-width:890px ){
     .midbanner-background{

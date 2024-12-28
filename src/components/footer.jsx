@@ -46,8 +46,12 @@ function footer() {
                                 <h2>Soluções</h2>
                             </div>
                             <ul>
-                                <li>Credito sob medida</li>
-                                <li>Sessão Estratégica</li>
+                                <Link to={'/Prime-finance/creditoSobMedida'}>
+                                    <li>Crédito sob medida</li>
+                                </Link>
+                                <Link to={"Prime-finance/sessãostratégica"}>
+                                    <li>Sessão Estratégica</li>
+                                </Link>
                                 <Link to={'/Prime-finance/homeEquity'}>
                                     <li>Home Equity</li>
                                 </Link>
@@ -79,7 +83,7 @@ function footer() {
                         Nós respeitamos a sua privacidade e queremos garantir que você tenha a melhor
                         experiência possível no nosso site, sabendo que seus dados estão seguros e protegidos.
                         <a style={{ color: 'orange', cursor: 'pointer' }} > Acesse nossa política de privacidade.</a></p>
-                    <p>Desenvolvido por: <a style={{ fontWeight:'900', color:'white', cursor: 'pointer' }} href='https://rodrigo-0990.github.io/Portfolio/' target='blank'>Rodrigo Rodrigues</a></p>
+                    <p>Desenvolvido por: <a style={{ fontWeight: '900', color: 'white', cursor: 'pointer' }} href='https://rodrigo-0990.github.io/Portfolio/' target='blank'>Rodrigo Rodrigues</a></p>
                 </div>
             </div>
         </>

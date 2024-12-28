@@ -1,14 +1,16 @@
 import React from "react";
+import InputMask from "react-input-mask";
+
 
 function firstStep() {
     return (
         <>
             <label>Nome</label>
-            <input type="text" required />
+            <InputMask type="text" placeholder="Como podemos te chamar?"required />
             <label>Email</label>
-            <input type="text" required />
+            <input type="email" placeholder="nome@email.com" required />
             <label>WhatsApp</label>
-            <input type="number" required />
+            <InputMask  mask="+55 (99) 99999-9999"  placeholder="(99)99999-9999" required />
         </>
     )
 }

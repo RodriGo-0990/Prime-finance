@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'poppins-semibold';
+    src: url(../Poppins/Poppins-SemiBold.ttf) format('opentype');
+}
+@font-face {
+    font-family: 'Poppins-light';
+    src: url(../Poppins/Poppins-Light.ttf) format("opentype");
+  }
+.wrapper-credito{
+    background-color:black;
+}
+.banner-credito{
+    margin: 0;
+    padding: 3em;
+    gap: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+
+    & h1{
+        font-family: 'poppins-semibold';
+        font-size: xx-large;
+    }
+    & p{
+        font-size: medium;
+        line-height: 1.3em;
+        font-family: 'Poppins-light';
+    }
+}
+.banner-credito .first-block{
+    width: 400px;
+}
+.banner-credito .second-block{
+    width: 400px
+}

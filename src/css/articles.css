@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'poppins';
+    font-family: 'poppins-light';
     src: url(../Poppins/Poppins-Light.ttf);
 }
 
@@ -12,7 +12,7 @@
     border-radius: 10px;
     box-shadow: 5px 8px 12px 1px #000000a2;
     transition: 1s;
-    font-family: 'poppins';
+    font-family: 'poppins-light';
     cursor: pointer;
 }
 

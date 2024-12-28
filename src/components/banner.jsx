@@ -1,8 +1,6 @@
 import '../css/banner.css'
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import ScrollReveal from 'scrollreveal';
-import { FiArrowDownRight } from "react-icons/fi";
 import { FaHandshake } from "react-icons/fa6";
 import Button from './sub-components/button-contact.jsx';
 import Askprime from './sub-components/askPrime.jsx';

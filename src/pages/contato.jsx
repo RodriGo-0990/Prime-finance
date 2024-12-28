@@ -30,7 +30,7 @@ function Contato() {
         <Header />
         <div className='banner-contato'>
           <div className='title-contato'>
-            <h1>Na hora de planejar o futuro da sua empresa conte com os nossos <span style={{ "color": "#20509F" }}>profissionais</span></h1>
+            <h1>Conte com os nossos <span style={{ "color": "#20509F" }}>profissionais</span> para planejar o futuro da sua empresa</h1>
             <p>Descubra a diferença da Prime Finance e experimente a verdadeira personalização em serviços financeiros. Vamos juntos desenhar o seu futuro financeiro. Entre em contato conosco hoje para iniciar sua jornada.</p>
           </div>
           <div className='form-contato'>
