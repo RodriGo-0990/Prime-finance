@@ -9,8 +9,6 @@
 
 
 .wrapper-cards-about {
-    width: 380px;
-    height: 400px;
     font-family: 'Poppins-Bold';
     padding: 2em;
     color: #13366f;
@@ -23,6 +21,7 @@
     margin: 0;
     
 }
+
 @media(max-width:360px){
     .wrapper-cards-about{
         height:350px;

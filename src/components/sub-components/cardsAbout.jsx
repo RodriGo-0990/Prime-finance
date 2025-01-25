@@ -1,8 +1,8 @@
 import '../../css/cardsAbout.css'
-function cardsAbout({logo, title, text }) {
+function cardsAbout({ background, color, width, height, logo, title, text }) {
     return (
         <>
-            <div className="wrapper-cards-about">
+            <div className="wrapper-cards-about" style={{width:width, height:height, color:color, background:background}}>
                 <div className='first-block-card-about'>
                     <div className='logo-card-about'>{logo}</div>
                     <div className='title-card-about'>

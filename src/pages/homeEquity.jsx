@@ -137,18 +137,15 @@ function homeEquity() {
             <section className="cards-equity">
                 <h1>Porque escolher o <span style={{ color: "#20509F" }}>Home Equity</span> da Prime Finance?</h1>
                 <div className="cards-equity-wrapper">
-                    <Cards logo={<TbReceiptTax size={40} color="#13366f" />}
+                    <Cards width={300} height={400} logo={<TbReceiptTax size={40} color="#13366f" />}
                         title={"Acesse um crédito significativo a taxas de juros competitivas"}
                         text={"Maximize o potencial do seu imóvel e libere a liquidez que você precisa para expandir seus negócios ou financiar outros projetos importantes"} />
-                    <Cards logo={<FaHandsHelping size={40} color="#13366f" />}
+                    <Cards width={300} height={400} logo={<FaHandsHelping size={40} color="#13366f" />}
                         title={"Processo de solicitação simples e ágil"}
                         text={"Nossa equipe está pronta para guiar você por cada etapa, tornando todo o processo o mais simples e rápido possível"} />
-                    <Cards logo={<FaMoneyBillWave size={40} color="#13366f" />}
+                    <Cards width={300} height={400} logo={<FaMoneyBillWave size={40} color="#13366f" />}
                         title={"Soluções financeiras personalizadas"}
                         text={"Compreendemos que cada cliente tem necessidades únicas. Nossa abordagem sob medida garante que oferecemos as soluções que melhor atendem às suas circunstâncias específicas"} />
-                    {/* <Cards logo={<RiCustomerService2Fill size={40} color="#13366f" />}
-                        title={"Atendimento ao cliente excepcional"}
-                        text={"Nossos consultores financeiros dedicados estão sempre disponíveis para ajudá-lo a navegar por suas opções e garantir que você esteja totalmente informado e confortável com suas decisões financeiras"} /> */}
                 </div>
             </section>
             <Void/>

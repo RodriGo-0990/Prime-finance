@@ -1,37 +1,81 @@
 @font-face {
-    font-family: 'poppins-semibold';
-    src: url(../Poppins/Poppins-SemiBold.ttf) format('opentype');
+    font-family: 'poppins-bold';
+    src: url(../Poppins/Poppins-ExtraBold.ttf) format('opentype');
 }
+
 @font-face {
     font-family: 'Poppins-light';
     src: url(../Poppins/Poppins-Light.ttf) format("opentype");
-  }
-.wrapper-credito{
-    background-color:black;
 }
-.banner-credito{
-    margin: 0;
-    padding: 3em;
-    gap: 1em;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    color: white;
 
-    & h1{
-        font-family: 'poppins-semibold';
-        font-size: xx-large;
-    }
-    & p{
-        font-size: medium;
-        line-height: 1.3em;
-        font-family: 'Poppins-light';
+.credito-sob-medida-wrapper {
+    font-family: 'Poppins-light';
+    display: flex;
+    height: fit-content;
+    padding: 3em;
+    
+}
+
+.credito-sob-medida-wrapper-title {
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+    height: 300px;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'poppins-bold';
+
+    & h1 {
+        width: 100%;
     }
 }
-.banner-credito .first-block{
-    width: 400px;
+
+.credito-sob-medida-wrapper-cards {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: grid;
+    align-content: space-evenly;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    padding: 3em;
+    height: fit-content;
 }
-.banner-credito .second-block{
-    width: 400px
+
+@media(max-width:1220px) {
+    .credito-sob-medida-wrapper-title {
+        width: 60%;
+        height: 400px;
+    }
+
+    .credito-sob-medida-wrapper-cards {
+        grid-template-columns: 1fr;
+        gap: 1em;
+        height: auto;
+    }
+}
+
+@media (max-width: 850px) {
+    .credito-sob-medida-wrapper-title{
+        width: 40%;
+        font-size:larger;
+    }
+}
+
+@media(max-width:745px) {
+    .credito-sob-medida-wrapper{
+        padding:0;
+    }
+    .credito-sob-medida-wrapper-title{
+        width: 100%;
+        height: auto;
+        position: static;
+        text-align: center;
+    }
+
+    .credito-sob-medida-wrapper {
+        flex-direction: column;
+    }
 }

@@ -14,7 +14,7 @@ function CardNumbers({ number, text, ms }) {
             {
                 root: null,
                 rootMargin: '0px',
-                threshold: 0.5, // Customize this threshold as needed
+                threshold: 0.5,
             }
         );
 
